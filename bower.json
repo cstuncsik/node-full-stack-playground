@@ -1,0 +1,26 @@
+{
+  "name": "node-full-stack-playground",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Csaba Tuncsik <csaba.tuncsik@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "^3.4.0",
+    "moment": "^2.14.1",
+    "page": "^1.7.1",
+    "skeleton": "^2.0.4",
+    "zepto-full": "^1.1.4"
+  }
+}

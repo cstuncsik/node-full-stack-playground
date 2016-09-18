@@ -1,0 +1,8 @@
+.module-gh-search
+    h2 Github search
+    input.gh-search(type='text')
+    ul.gh-search-results(data-bind='foreach: ghUsers')
+        li
+            a(data-bind='attr: {href: html_url}',target='_blank')
+                img(data-bind='attr: {src: avatar_url}')
+                span(data-bind='text: login')

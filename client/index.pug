@@ -1,0 +1,33 @@
+doctype html
+html
+    head
+        // build:cssVendor(./) vendor.css
+        link(href='bower_components/skeleton/css/normalize.css', rel='stylesheet')
+        link(href='bower_components/skeleton/css/skeleton.css', rel='stylesheet')
+        // endbuild
+
+        // build:css(builds/tmp) app.css
+        link(href='app.css', rel='stylesheet')
+        // endbuild
+body
+    #container
+        header
+            include ./shared/templates/header
+        #content
+            include ./components/home/home
+            include ./components/github/github
+            include ./components/activities/activities
+            include ./components/not_found/not_found
+        footer
+            include ./shared/templates/footer
+
+    // build:jsVendor(./) vendor.js
+    script(src='bower_components/knockout/dist/knockout.debug.js')
+    script(src='bower_components/moment/moment.js')
+    script(src='bower_components/page/page.js')
+    script(src='bower_components/zepto-full/zepto.js')
+    // endbuild
+
+    // build:js(builds/tmp) app.js
+    script(src='app.js')
+    // endbuild

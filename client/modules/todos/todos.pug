@@ -1,0 +1,10 @@
+.module-todos
+    h2 Todos
+    form.todo-form(action='')
+        input(type='text', name='todo')
+        button Add
+    ul.todos-list(data-bind='foreach: todos')
+        li.item(data-bind='attr: {id: _id}')
+            span.name(data-bind='text: name')
+            input.done(data-bind='checked: done',type='checkbox')
+            button.remove remove

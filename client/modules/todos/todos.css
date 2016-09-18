@@ -1,0 +1,10 @@
+.module-todos input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.module-todos button {
+    display: inline-block;
+    color: #0FA0CE;
+    vertical-align: middle;
+}

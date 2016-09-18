@@ -1,0 +1,26 @@
+@import 'variables.css';
+
+body {
+    background: var(--body-bg-color);
+}
+
+#container {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+header {
+    clear: both;
+}
+
+#content section.hidden {
+    display: none;
+}
+
+#content section.visible {
+    display: block;
+}
+
+footer {
+    clear: both;
+}

@@ -1,0 +1,26 @@
+.gh-search-results {
+    margin-left: -10px;
+}
+
+.gh-search-results li {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #1a2c51;
+    text-align: center;
+    list-style: none;
+    background: #3f5a54;
+}
+
+.gh-search-results li a {
+
+}
+
+.gh-search-results li a img {
+    width: 150px;
+    height: 150px;
+}
+
+.gh-search-results li a span {
+    display: block;
+}

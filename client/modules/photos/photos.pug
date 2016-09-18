@@ -1,0 +1,17 @@
+.module-photos
+    #filter.form
+        .row
+            .six.columns
+                label(for='search') Search in titles:
+                input#search(type='text')
+            .six.columns
+                label Order by creation date:
+                button#order(data-bind='css: orderDir, click: toggleOrderDir')
+    ul.list-photos(data-bind='foreach: photos')
+        li(data-bind='css: { hidden: hidden}')
+            a(data-bind='attr: {href: author.profileUrl, title: title + " by " + author.firstname + " " + author.lastname + ", " + displayDate}',target='_blank')
+                strong(data-bind='text: title')
+                picture
+                    img(data-bind='attr: {src: thumbnail}')
+                span(data-bind='text: author.firstname + " " + author.lastname')
+                small(data-bind='text: displayDate')

@@ -1,0 +1,23 @@
+{
+    "root": true,
+    "extends": "eslint:recommended",
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-console": 0
+    },
+    "globals": {
+        "ko": false,
+        "moment": false,
+        "page": false,
+        "Zepto": false,
+        "$": true
+    }
+}
